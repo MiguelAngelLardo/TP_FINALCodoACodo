@@ -1,0 +1,156 @@
+ @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
+
+
+
+ .banner-actividades {
+  background: url(../resources/imagenes/actividades-02.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.banner-actividades h1 {
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+.texto-foto1{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100vw;
+
+}
+
+.texto1{
+  width: calc(60% - 10px);
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.foto1{
+  width: calc(40% - 10px);
+  height: auto;
+  margin-bottom: 10px;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.foto1 img{
+  border-radius: 10px;
+  height: 22%;
+  width: 70%;
+  }  
+
+.foto-abajo1{
+  display: flex;
+  width: 100vw;
+  height: auto;
+  justify-content: space-between;
+  margin: 0% 10px;
+}
+
+.foto-abajo1 img{
+  border-radius: 10px;  
+  width: 24%
+}
+
+
+@media screen and (max-width: 1231px) {
+  main{
+    height: 100vh;
+  }
+  .banner-actividades{
+    height: 20vh;
+  }
+  .banner{
+    height: 15vh;
+  }
+
+  .banner h1{
+    line-height: 15vh;
+  }  
+
+  .banner-actividades h1{
+    size: 0.9rem;
+  }
+  .texto-foto1{
+    height:auto;
+    width: 100vw;
+  }
+
+  .texto1{
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .foto1{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .foto1 img{
+    border-radius: 10px;
+    height: 14%;
+    width: 50%;
+  }  
+
+
+  .foto-abajo1 img{
+    border-radius: 10px;  
+    width: 20%;
+    margin-left: 1.0em;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  main{
+    height: 85rem; /*con 100% no responde para bajar el footer*/
+  }
+ 
+  .texto-foto1 {
+    flex-direction: column;
+  }
+  .texto1 {
+    width: 100%;
+    font-size: 0.9em;
+    padding: 0.5em;
+  }
+  .foto1{
+  display: flex;
+  flex-wrap: wrap;
+    width: 100vw;
+   
+  }
+  .foto1 img{
+    width: 100%;
+    height: auto;
+   margin: 5px;
+  }
+
+  .foto-abajo1 img{
+   display: none;
+  }
+}
+
+
+
+
+
+
+  

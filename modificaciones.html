@@ -11,12 +11,11 @@
 
 <body>
     <h1>Modificar Productos del Inventario</h1>
-    <h3>Codo a Codo 2023</h3>
     <div id="app">
         <form @submit.prevent="obtenerProducto">
             <label for="codigo">Código:</label>
             <input type="text" v-model="codigo" required><br>
-            <button type="submit">Modificar Producto</button> <a href="index.html">Menu principal</a>
+            <button type="submit">Modificar Producto</button> <a href="index2.html">Menu principal</a>
         </form>
 
         <div v-if="mostrarDatosProducto">

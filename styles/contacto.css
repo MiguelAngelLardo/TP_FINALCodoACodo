@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.banner-contacto{
+  background: url(../resources/imagenes/ruca-lauquen-laguna-brava2.jpg);   
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.banner-contacto h1{
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+.contenedor {    
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.columna {  
+  width: 50%;
+  padding: 1em;
+  min-height: 100%;
+}
+
+.texto {
+  border-right: 1px solid #ccc;
+}
+
+.formulario form {
+display: flex;
+flex-direction: column;
+}
+
+.texto h2 {
+  text-align: center;
+}
+
+.form-row {
+display: flex;
+justify-content: space-between;
+gap: 5%;  
+}
+
+.form-col {
+width: 50%;
+}
+
+.form-col input[type="text"] {
+border: 2px solid black;
+width: 90%;
+padding: 5px;
+}
+
+.formulario h2 {
+text-align: center;
+}
+
+.formulario label {
+font-weight: bold;
+margin-bottom: 0.5em;
+}
+
+.formulario input[type="text"],.formulario input[type="email"],.formulario textarea {
+padding: 1em;
+margin-bottom: 0.5em;
+border-radius: 4px;
+border: 1px solid black;
+background-color: #f7f7f7;
+}
+
+.formulario textarea {
+height: 7vh;
+font-size: 200%;
+}
+
+.form-col input[type="date"] {
+width: 100%;
+height: 30px;
+font-size: 20px;
+}
+
+.formulario input[type="submit"] {
+background-color: #81b5df;
+color: #fff;
+border: 1 px solid black;
+padding: 0.5em 1em;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #588fce;
+  color: #fff;
+}
+
+.formulario input[type="submit"]:disabled {
+background-color: #ccc;
+cursor: not-allowed;
+}
+
+.contact-info {
+  display: flex;
+  margin-top: 1em;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(1.5em - 0.4vh);
+}
+
+#mensajeError {
+ color: red;
+ text-shadow: 0px 0px 5px red;
+}
+
+#mensaje{
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 1231px) {
+  .banner{
+    height: 15vh;
+  }
+
+  .banner h1{
+    line-height: 15vh;
+  }  
+  
+  .contact-info{
+    font-size: 80%;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .banner{
+    height: 10vh;
+  }
+
+  .banner h1{
+    line-height: 10vh;
+  }    
+  .contact-info{
+    font-size: 70%;
+  }
+
+  .contenedor{
+    flex-direction: column;    
+  }
+
+  .columna {  
+    padding: 0.5em;
+    min-height: 10%;
+    width: 100%;
+  }   
+}

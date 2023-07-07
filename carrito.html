@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inventario</title>
   <script src="https://unpkg.com/vue@next"></script>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
   <div id="app">
     <h1>Carrito de compras</h1>
-    <h3>Codo a Codo 2023</h3>
     <table>
       <thead>
         <tr>
@@ -64,7 +63,7 @@
     </div>
 
     <div class="contenedor-centrado">
-      <a href="index.html">Menu principal</a>
+      <a href="index2.html">Menu principal</a>
     </div>
 
   </div>
@@ -110,6 +109,7 @@
             .then(response => response.json())
             .then(data => {
               alert(data.message)
+              window.location.reload();
             })
             .catch(error => {
               console.error('Error al agregar el producto al carrito:', error)
@@ -130,6 +130,7 @@
             .then(response => response.json())
             .then(data => {
               alert(data.message)
+              window.location.reload();
             })
             .catch(error => {
               console.error('Error al restar el producto del carrito:', error)

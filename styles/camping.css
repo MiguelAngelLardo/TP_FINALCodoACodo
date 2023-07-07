@@ -1,0 +1,135 @@
+@import url(../styles/style.css);
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
+/* banner */
+/*  .banner-camping{
+    position: relative;
+    width: 100%;
+  height: 40vh;
+    background:linear-gradient(rgba(5, 7, 12, 0.20),rgba(5, 7, 12, 0.20)), url(../resources/imagenes/camping1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:bottom;
+    margin-bottom: 50px;
+ } */
+ .banner-camping {
+    background:linear-gradient(rgba(5, 7, 12, 0.20),rgba(5, 7, 12, 0.20)), url(../resources/imagenes/camping1.jpg);
+    background-size: cover;
+    background-position:bottom;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-camping h1 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-family: 'Bangers', cursive;
+    font-size: 5rem;
+    line-height: 1.2;
+  }
+.banner-title{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+.contenedor h1{
+    margin: 0;
+}
+
+/* sectores  */
+
+.sectores{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+.sectores_dos{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+.sectores_picnic{
+    display: flex;
+    width: 45%;
+}
+.sectores_picnic img{
+   width: 0;
+   flex-grow:1;
+   object-fit:cover ;
+   opacity: .8;
+   transition: .5s ease;
+}
+.sectores img:hover{
+    cursor:crosshair;
+    width: 2em;
+    opacity: 1;
+    filter: contrast(150%);
+}
+.sectores_dos img:hover{
+    cursor:crosshair;
+    width: 2em;
+    opacity: 1;
+    filter: contrast(150%);
+}
+.sectores_picnic--text{
+    width: 50%;
+}
+.sectores_picnic--text h2{
+    margin-bottom: 0.5em;
+}
+
+/* responsive area */
+
+
+@media (max-width: 768px) {
+    .container{
+        width: 95%;
+        align-items: center;
+    }
+    .banner-camping{
+        height: 500px;
+    }
+  
+   .sectores{
+    flex-direction: column;
+   }
+   .sectores_picnic{
+    width: 300px;
+    aspect-ratio: 10/16;
+    position: relative;
+    overflow:scroll;
+    }
+    .sectores_picnic::-webkit-scrollbar{
+        width: 1px;
+    }
+    .sectores_picnic img{
+        width: 100%;
+        left: 0;
+        position:sticky;
+        object-fit: cover;
+        border-radius: 5px;
+        scroll-snap-align: center;
+        opacity: 1;
+     }
+     .sectores_picnic--text{
+        margin-top:-200px;
+        width: 100%;
+     }
+   .sectores_dos{
+    flex-direction:column-reverse;
+   }
+
+   .sectores_picnic img{
+    height: 50%;
+   }
+   
+  }
