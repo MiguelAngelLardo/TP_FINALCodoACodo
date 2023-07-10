@@ -54,6 +54,7 @@ header {
   font-weight: 500;
   margin-right: 30px;
   transition: 0.4s ease-out;
+  font-size: 85%;
 }
 .enlaces a:hover {
   background-color:#81b5df;

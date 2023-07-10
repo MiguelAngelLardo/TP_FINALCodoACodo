@@ -6,11 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar producto</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../styles/estilosApi.css">
 </head>
 
 <body>
-    <h1>Agregar Productos al Inventario</h1>
+    <header>
+        <nav class="container nav-container">
+            <a href="#">
+              <picture class="nav-branding">
+                <img src="../resources/logo.png" alt="logo Complejo La Brava">
+              </picture>
+            </a>
+            <div class="enlaces">
+              <a href="../index.html" >Inicio</a>
+              <a href="../pages/cabañas.html">Cabañas</a>
+              <a href="../pages/camping.html">Camping</a>
+              <a href="../pages/actividades.html">Actividades</a>
+              <a href="../pages/contacto.html">Contacto</a>
+              <a href="../Api Flask/index2.html">Reservas</a>
+              <a href="../pagess/nosotros.html">Quienes somos</a>
+            </div>
+            <div class="menu-responsive">
+              <img src="../resources/imagenes/menu-hamburger.svg" id="menu-responsive">
+            </div>
+          </nav>
+      </header>
+      <section class="banner-reservas">
+        <h1 class="reservas">Reservas</h1>
+    </section>
+    <div class="container_api">
+    <h1 class="titulos_api">Agregar Espacio de Alquiler</h1>
     <form id="formulario">
         <label for="codigo">Código:</label>
         <input type="text" id="codigo" name="codigo" required><br>
@@ -18,15 +43,18 @@
         <label for="descripcion">Descripción:</label>
         <input type="text" id="descripcion" name="descripcion" required><br>
 
-        <label for="cantidad">Cantidad:</label>
+        <label for="cantidad"> Días:</label>
         <input type="number" id="cantidad" name="cantidad" required><br>
 
         <label for="precio">Precio:</label>
         <input type="number" step="0.01" id="precio" name="precio" required><br>
 
         <button type="submit">Agregar Producto</button>
-        <a href="index2.html">Menu principal</a>
+        <div class="contenedor-centrado">
+            <a class="api" href="index2.html">Menu principal</a>
+        </div>
     </form>
+    </div>
     <script>
         const URL = "https://MiguelLardo.pythonanywhere.com/"
         // Capturamos el evento de envío del formulario
@@ -75,6 +103,8 @@
             })
         })
     </script>
-</body>
 
+</body>
+<script src="../js/navbar.js"></script>
+<script src="https://kit.fontawesome.com/3d09fa9176.js" crossorigin="anonymous"></script>
 </html>
